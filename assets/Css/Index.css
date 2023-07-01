@@ -8,9 +8,8 @@
     position: fixed;
     top: 0;
     justify-content: space-between;
-    align-items: center;   
+    align-items: center;
     background-color: white;
-
 }
 
 .header__nav .nav__item {
@@ -47,7 +46,6 @@
     height: 30px;
     max-width: 500px;
     flex: 1 1 50px;
-
 }
 
 .img-nav-menu-search input {
@@ -78,6 +76,7 @@
 .main {
     display: flex;
     margin: auto;
+    height: 100%;    
     margin-top: 60px;
     justify-content: center;
     background-color: #F8F8F8F8;
@@ -88,24 +87,26 @@
 .main-nav {
     border: 2px solid blue;
     width: 500px;
-    height: 80%;
+    height: 80%;    
 }
 
 .video-principal>iframe {
     width: 952px;
     height: 537px;
     margin-left: 10px;
-    border: 1px solid #ccc;
+    flex: 1 0 auto;
+    border: 1px solid #ccc;     
 }
 
 .title-video {
     text-align: start;
     margin-left: 10px;
+    font-family: Roboto;
+    font-size: 1.3rem;
 }
 
 .tambs {
     display: flex;
-
     justify-content: start;
     align-items: start;
     height: 90px;
@@ -114,40 +115,105 @@
 }
 
 .tambs-description {
-    display: inline-block;
-    flex-flow: column wrap;
-    height: 80px;
-    width: 250px;
+    display: flex;
+    flex-flow: column nowrap;
     margin-left: 10px;
-    line-height: 1.5;
-    flex: 1 0 auto;
-   
+    justify-content: space-around;
+    height: 90px;
 }
 
-.tambs-description p {
-    font-size: .7rem;
-    font-family: Roboto;
-    font-weight: lighter;  
-    flex-flow: wrap;
-    max-width: 200px;  
-    max-height: 80px;
-    max-lines: 2;
-    color: #515151;
-}
 .tambs-description h3 {
-    font-size: 1rem;
+    margin: 0;
+    font-size: .8rem;
     font-family: Roboto;
-    font-weight: bold;  
+    font-weight: bold;
     flex-flow: wrap;
-    max-width: 200px;  
-    max-height: 80px;   
+    max-width: 190px;
+    max-height: 80px;
     color: #000000;
 }
 
+.tambs-description p {
+    margin: 0;
+    font-size: .7rem;
+    font-family: Roboto;
+    font-weight: lighter;
+    width: 150px;
+    color: #515151;
+}
+
 .item-description {
-    margin: auto;
-    align-self: start;
-    font-size: 1rem;
-    white-space: 2.5;  
-    flex: 1;  
+    margin: 0 0 5 0;
+    line-height: 1rem;
+}
+
+.number-views-text {
+    margin: 0;
+    line-height: .7rem;
+}
+.video-footer-nav{
+    display: flex;
+    height: 42px;
+    width: 902px;
+    margin: 0 0 0 10px;
+    justify-content: space-between;
+    align-items: center;    
+    gap: 10px;    
+}
+.channel-description{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.channel-description img{
+    width: 42px;
+    height: 100%;
+}
+.channel-text{
+    display: flex;
+    flex-flow: column nowrap;
+    width: 106px;
+    height: 32px;        
+}
+.channel-text h5{
+    margin: 0 ;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: .8rem;
+    text-transform: uppercase; 
+}
+.channel-text p{
+    margin: 0;
+    font-size: .8rem; 
+}
+.video-footer-nav-botomn-subscribe{
+    width: 159px;
+    height: 40px;
+}
+ .video-footer-nav-botomn{
+    display: flex; 
+    align-items: center;
+    gap: 5px;  
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: .7rem;
+
+}
+.video-footer-nav-botomn img{
+    width: 24px; 
+    height: 24px;    
+}
+.video-info{
+    margin-left: 10px;
+    font-family: Roboto;    
+    font-weight: 600;    
+    font-size: .8rem;
+}
+.video-discription{
+    margin-left: 10px;
+    width:510px ;
+    color: #515151;
+    font-family: Roboto;
+    font-weight: lighter;
+    font-size: .9rem;
 }
